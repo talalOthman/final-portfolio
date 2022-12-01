@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+/*About page styles*/
+.aboutContent {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.aboutCard {
+  display: flex;
+  background-color: #b2b2b2;
+  background-color: rgba(0, 0, 0, .3);
+  /* border: 1px solid black; */
+  height: 80vh;
+  width: 80vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.aboutImageContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid blue; */
+  justify-content: space-around;
+  height: 40vh;
+}
+
+.aboutImageItem{
+  display: flex;
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  /* border: 1px solid red; */
+}
+
+.aboutNameItem{
+  font-size: 3vh;
+}
+
+.aboutNavbarLogoItem{
+  cursor: pointer;
+}
+
+.aboutSocialMediaContainer{
+  display: flex;
+  /* border: 1px solid red; */
+  width: 10rem;
+  justify-content: space-around;
+}
+
+
+.aboutDonationItem{
+  display: flex;
+  /* border: 1px solid red; */
+  width: 15rem;
+  height: 10rem;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+
+
+/*Index page styles*/
+.indexContentContainer{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.indexTitleContainer {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100vw;
+  height: 45vh;
+  margin-top: -5rem;
+}
+
+.indexTitleItem {
+  font-size: 7vw;
+  color: white;
+  /* border: 1px solid blue; */
+}
+
+.indexSubTitleItem {
+  font-size: 1.7vw;
+  color: white;
+  /* border: 1px solid red; */
+  margin-top: -2rem;
+  /* font-style: italic; */
+  font-family: 'Fira Mono', monospace;
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+
+
+.indexButtonContainer {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: center;
+}
+
+.indexButtonItem{
+  border: 1px solid white;
+  height: 6vh;
+  width: 8rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.indexButtonItem:hover{
+  background-color: white;
+  color: black;
+}
+
+.projectsContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // border: 1px solid yellow;
+}
+
+.projectsContainer{
+  display: flex;
+  /* border: 1px solid red; */
+  height: 80vh;
+  width: 80vw;
+  background-color: #b2b2b2;
+  background-color: rgba(0, 0, 0, .3);
+  flex-direction: column;
+}
+
+
+.projectsNavigatorContainer{
+  display: flex;
+  // border: 1px solid red;
+  height: 10vh;
+  width: 80vw;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projectsButton{
+  // margin: 2rem;
+  min-width: 5.5rem;
+}
+
+.projectsNameContainer{
+  display: flex;
+  /* border: 1px solid red; */
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectsPicContainer{
+  display: flex;
+  height: 32vh;
+  width: 80vw;
+  /* border: 1px solid green; */
+  align-items: center;
+  justify-content: center;
+}
+
+.projectsPicItem{
+  display: flex;
+  border-radius: 50%;
+  height: 13rem;
+}
+
+
+.projectsDescriptionContainer{
+  display: flex;
+  // border: 1px solid blue;
+  height: 18vh;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.projectsTechContainer{
+  display: flex;
+  /* border: 1px solid yellow; */
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.projectsNameItem{
+  font-size: 1.5rem;
+  font-family: 'Fira Mono', monospace;
+}
+
+.projectsLinksContainer{
+  display: flex;
+  /* border: 1px solid purple; */
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectContentButton{
+  margin: 1rem;
+  min-width: 4rem;
+  font-family: 'Fira Mono', monospace;
+}
+
+.projectsDescriptionItem{
+  display: flex;
+  // flex-direction: column;
+  text-align: justify;
+  font-size: 1rem;
+  font-family: 'Fira Mono', monospace;
+  // border: 1px solid red;
+  // padding-left: 1rem;
+  row-gap: 0.5rem;
+  width: 50rem
+}
+
+.projectsTechIconsContainer{
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+  column-gap: 1rem;
+}
+
+.projectsTechIconItemDisabled{
+  color: grey;
+}
+
+.projectsTechIconItem{
+  cursor: pointer;
+}
+
+.projectsTechTitleItem{
+  /* border: 1px solid white; */
+  margin: 0;
+  font-family: 'Fira Mono', monospace;
+}
+
+.projectsTechIconItemHidden{
+  display: none;
+}
+
+
+@media all and (max-width:30em) {
+
+  .indexTitleItem {
+      font-size: 10vw;
+  }
+
+  .indexSubTitleItem {
+      font-size: 2vw;
+  }
+
+  .indexTitleContainer{
+    height: 27vh;
+  }
+}
+
+
+//DESKTOP SPECIAL DESIGN
+@media (min-width: 600px) {
+  .projectsNavigatorContainer{
+    display: none;
+  }
+
+  .projectsTechIconItemHidden{
+    display: flex;
+  }
+
+  .projectsBottomContentContainer{
+    display: flex;
+    // border: 1px solid yellow;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .projectsContent{
+    // border: 1px solid yellow;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+/*Layout page styles*/
+.layoutNavbar{
+  display: flex;
+  // border: 1px solid red; 
+  height: 10vh;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2vh;
+}
+
+.layoutNavbarItems{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid purple; */
+  width: 100vw;
+  padding: 3rem;
+}
+
+.layoutNavbarSubItems{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  width: 8vw;
+}
+
+
+.layoutContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  // border: 1px solid blue; 
+  height: 90vh;
+  overflow: none;
+}
+
+.layoutNavbarLogoItem{
+  cursor: pointer;
+}
+
+
+.uploadContent{
+  /* border: 1px solid blue; */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.uploadButtonItem {
+  display: inline-block;
+  padding: 0.35rem 1.2rem;
+  border: 0.1rem solid #FFFFFF;
+  margin: 0 0.3rem 0.3rem 0;
+  border-radius: 0.12rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  /* transition: all 0.2s; */
+  font-size: 3vh;
+  margin-top: 5vh;
+  border-radius: 5px;
+}
+
+.uploadButtonItem:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+
+.uploadMainContent{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin-top: -5rem;
+}
+
+.uploadInputItem{
+  display: none;
+}
+
+
+@media all and (max-width:30em) {
+  
+
+  .uploadTitleItem {
+      font-size: 10vw;
+  }
+
+  .uploadSubTitleItem {
+      font-size: 3vw;
+  }
+
+  .indexTitleItem {
+    font-size: 15vw;
+  }
+  
+  .indexSubTitleItem {
+    font-size: 4.3vw;
+  }
+
+  .projectsDescriptionItem{
+    font-size: 0.9rem;
+  }
+
+  .projectsNameItem{
+    font-size: 1.2rem;
+  }
+}
+
+.effect-1,
+.effect-2,
+.effect-3 {
+    overflow: hidden;
+}
+
+.page {
+    background: white;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 4rem 0;
+}
+
+.effect-3::after {
+    content: "";
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+            hsla(0, 100%, 76%, 1) 0%,
+            hsla(237, 100%, 73%, 1) 100%);
+    z-index: -1;
+}
+
+.cover {
+  background-image: url(../public/images/loading.gif) no-repeat scroll center center !important;
+  position:fixed;
+  width:100%;
+  height: 100%;
+  left:0;right:0;top:0;bottom:0;
+  /* background-color: rgba(255,255,255,0.5); */
+  backdrop-filter: blur(5px);
+  z-index:9999;
+  display: none;
+}
+
+
+
+
+
