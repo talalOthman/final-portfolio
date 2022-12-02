@@ -29,6 +29,8 @@ a {
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     height: 100vh;
+    padding: 0;
+    margin: 0;
     /* border: 1px solid yellow; */
   }
   
