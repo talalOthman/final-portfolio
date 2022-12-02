@@ -28,7 +28,7 @@ a {
     background: linear-gradient(-45deg, #1D1CE5, #4649FF, #7978FF, #C47AFF);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
-    height: 100vh;
+    height: 95vh;
     padding: 0;
     margin: 0;
     /* border: 1px solid yellow; */
