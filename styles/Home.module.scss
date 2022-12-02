@@ -266,7 +266,7 @@
 }
 
 .projectsTechTitleItem{
-  /* border: 1px solid white; */
+  //border: 1px solid white;
   margin: 0;
   font-family: 'Fira Mono', monospace;
 }
@@ -330,7 +330,7 @@
 .layoutNavbarItems{
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid purple; */
+  // border: 1px solid purple;
   width: 100vw;
   padding: 3rem;
 }
@@ -338,7 +338,7 @@
 .layoutNavbarSubItems{
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid black; */
+  //border: 1px solid black; 
   width: 8vw;
 }
 
@@ -347,7 +347,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  // align-items: center;
   // border: 1px solid blue; 
   height: 90vh;
   overflow: none;

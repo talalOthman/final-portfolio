@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <div className={styles.indexContentContainer}>
             <div className={styles.indexTitleContainer}>
-                <h1 className={styles.indexTitleItem}>I'm Talal</h1>
+                <h1 className={styles.indexTitleItem}>I&apos;m Talal</h1>
                 <div className={styles.typewriter}>
                     <p className={styles.indexSubTitleItem}>A Software Engineer. </p>
                 </div>
