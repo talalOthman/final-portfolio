@@ -148,12 +148,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // border: 1px solid yellow;
+  // border: 1px solid red;
+  overflow: hidden;
+  height: 90vh;
 }
 
 .projectsContainer{
   display: flex;
-  /* border: 1px solid red; */
+  // border: 1px solid red;
   height: 80vh;
   width: 80vw;
   background-color: #b2b2b2;
@@ -319,7 +321,7 @@
 /*Layout page styles*/
 .layoutNavbar{
   display: flex;
-  // border: 1px solid red; 
+  // border: 1px solid blue; 
   height: 10vh;
   color: white;
   justify-content: space-between;
