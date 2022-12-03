@@ -173,8 +173,6 @@
   flex-direction: column;
   // border: 1px solid red;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
 }
 
 .projectsContainer{
@@ -190,8 +188,8 @@
 
 .projectsNavigatorContainer{
   display: flex;
-  // border: 1px solid red;
-  height: 10vh;
+  // border: 1px solid yellow;
+  height: 6vh;
   width: 80vw;
   align-items: center;
   justify-content: space-around;
@@ -314,6 +312,10 @@
 
   .indexTitleContainer{
     height: 27vh;
+  }
+
+  .projectsContainer{
+    height: 75vh;
   }
 }
 
@@ -454,6 +456,10 @@
 
   .projectsNameItem{
     font-size: 1.2rem;
+  }
+
+  .projectsNavigatorContainer{
+    align-items: flex-end;
   }
 }
 
