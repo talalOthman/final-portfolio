@@ -93,18 +93,18 @@
 .indexContentContainer{
   display: flex;
   flex-direction: column;
-  
+  // border: 1px solid yellow;
 }
 
 .indexTitleContainer {
-  /* border: 1px solid green; */
+  // border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   width: 100vw;
   height: 45vh;
-  margin-top: -5rem;
+  // margin-top: -5rem;
 }
 
 .indexTitleItem {
@@ -320,28 +320,6 @@
 }
 
 
-//DESKTOP SPECIAL DESIGN
-@media (min-width: 600px) {
-  .projectsNavigatorContainer{
-    display: none;
-  }
-
-  .projectsTechIconItemHidden{
-    display: flex;
-  }
-
-  .projectsBottomContentContainer{
-    display: flex;
-    // border: 1px solid yellow;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .projectsContent{
-    // border: 1px solid yellow;
-    // margin-bottom: 1.5rem;
-  }
-}
 
 
 /*Layout page styles*/
@@ -502,6 +480,41 @@
   backdrop-filter: blur(5px);
   z-index:9999;
   display: none;
+}
+
+//DESKTOP SPECIAL DESIGN
+@media (min-width: 600px) {
+  .projectsNavigatorContainer{
+    display: none;
+  }
+
+  .projectsTechIconItemHidden{
+    display: flex;
+  }
+
+  .projectsBottomContentContainer{
+    display: flex;
+    // border: 1px solid yellow;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .projectsContent{
+    // border: 1px solid yellow;
+    // margin-bottom: 1.5rem;
+  }
+
+  .layoutContent{
+    height: 90vh;
+  }
+
+  .indexContentContainer{
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid yellow;
+    justify-content: center;
+    margin-bottom: 7rem;
+  }
 }
 
 
