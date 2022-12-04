@@ -23,7 +23,6 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -48,7 +47,7 @@ a {
       background-position: 0% 50%;
     }
   }
-}
+
 
 html, body{
   height: auto;
