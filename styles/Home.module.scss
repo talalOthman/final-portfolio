@@ -159,11 +159,12 @@
   font-size: 2vh;
   border-radius: 5px;
   background-color: transparent;
+  color: white !important;
 }
 
 .indexButtonItem:hover{
   background-color: white;
-  color: black;
+  color: black !important;
 }
 
 .projectsContent{
