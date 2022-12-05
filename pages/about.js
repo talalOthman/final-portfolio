@@ -21,7 +21,7 @@ export default function Home() {
                 <div className={styles.aboutImageContainer}>
                     <div className={styles.aboutImageItem}>
                         <Image
-                            src="/images/Talal.jpg"
+                            src="/images/TalalSuitFinal.jpeg"
                             alt="Picture of the author"
                             width={500}
                             height={500}
