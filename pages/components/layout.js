@@ -3,7 +3,8 @@ import styles from '../../styles/Home.module.scss'
 import Head from 'next/head'
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faCode, faProjectDiagram, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
+// import '@fortawesome/fontawesome-svg-core/styles.css'; 
+import { faBars, faBurger, faCode, faHamburger, faProjectDiagram, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Layout({ children }) {
@@ -23,7 +24,18 @@ export default function Layout({ children }) {
                             style={{ fontSize: 25 }}
                             className={styles.layoutNavbarLogoItem}
                         /></Link>
-                    <Link href="/about">About</Link>
+                    <div className={styles.layoutNavbarSubItems}>
+                        <Link href="/about">Skills</Link>
+                        <Link href="/about">About</Link>
+                    </div>
+
+                    <div className={styles.layoutNavbarBurger}>
+                        <FontAwesomeIcon
+                            icon={faBars}
+                            style={{ fontSize: 25 }}
+                            className={styles.layoutNavbarLogoItem}
+                        />
+                    </div>
                 </div>
             </div>
 

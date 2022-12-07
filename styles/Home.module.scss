@@ -377,11 +377,17 @@
   padding: 3rem;
 }
 
+// .layoutNavbarItemLeftChoices
+
 .layoutNavbarSubItems{
   display: flex;
   justify-content: space-between;
-  //border: 1px solid black; 
-  width: 8vw;
+  // border: 1px solid black; 
+  width: 9vw;
+}
+
+.layoutNavbarBurger{
+  display: none;
 }
 
 .layoutContent{
@@ -479,6 +485,14 @@
 
   .aboutDescriptionItem{
     font-size: 1.5vh;
+  }
+
+  .layoutNavbarSubItems{
+    display: none;
+  }
+
+  .layoutNavbarBurger{
+    display: block;
   }
 }
 
