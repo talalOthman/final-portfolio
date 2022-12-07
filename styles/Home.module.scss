@@ -160,13 +160,35 @@
   font-size: 2vh;
   border-radius: 5px;
   background-color: transparent;
-  color: white !important;
+  // color: white !important;
+  animation: backgroundColor 3s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
 .indexButtonItem:hover{
-  background-color: white;
+  background-color: white !important;
   color: black !important;
-  transition: 0.5s;
+  // transition: 0.5s;
+  animation-play-state: paused;
+}
+
+@keyframes backgroundColor {
+  0%{
+    background-color: transparent;
+    color: white !important;
+  }
+  
+  50% {
+    background-color: white;
+    color: black
+  }
+
+  100%{
+    background-color: transparent;
+    color: white !important;
+  }
+  
 }
 
 .projectsContent{
@@ -260,13 +282,24 @@
 }
 
 .projectContentButton{
+  border: 1px solid white;
+  height: 6vh;
+  width: 8rem;
+  font-size: 2vh;
+  border-radius: 5px;
+  background-color: transparent;
   margin: 1rem;
   min-width: 4rem;
   font-family: 'Fira Mono', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
 }
 
-.projectContentButton{
-  transition: 0.5s;
+.projectContentButton:hover{
+  background-color: white !important;
+  color: black !important;
 }
 
 .projectsDescriptionItem{

@@ -84,13 +84,13 @@ export default function Home() {
                     />
                     <div className={styles.projectsLinksContainer}>
                         <Link href="https://github.com/talalOthman/Monkeypox-app" passHref={true}>
-                            <a target="_blank">
-                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Github</button>
+                            <a className={`${styles.projectContentButton}`} target="_blank">
+                                Github
                             </a>
                         </Link>
                         <Link href="https://drive.google.com/file/d/1iOcLydbbXQcZ-s40d0Bqfix3P8edUQKy/view?usp=share_link" passHref={true}>
-                            <a target="_blank">
-                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Demo</button>
+                            <a className={`${styles.projectContentButton}`}target="_blank">
+                                Demo
                             </a>
                         </Link>
                     </div>

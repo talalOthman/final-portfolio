@@ -73,13 +73,13 @@ export default function Home() {
 
                     <div className={styles.projectsLinksContainer}>
                         <Link href="https://github.com/talalOthman/Covid19-Tracker" passHref={true}>
-                            <a target="_blank">
-                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Github</button>
+                            <a className={`${styles.projectContentButton}`} target="_blank">
+                                Github
                             </a>
                         </Link>
                         <Link href="https://covid-19-tracker-74390.web.app/" passHref={true}>
-                            <a target="_blank">
-                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Visit</button>
+                            <a className={`${styles.projectContentButton}`} target="_blank">
+                                Demo
                             </a>
                         </Link>
                     </div>

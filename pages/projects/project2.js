@@ -85,13 +85,13 @@ export default function Home() {
                     </Link>
                     <div className={styles.projectsLinksContainer}>
                         <Link href="https://github.com/talalOthman/Marine-app" passHref={true}>
-                            <a target="_blank">
-                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Github</button>
+                            <a className={`${styles.projectContentButton}`} target="_blank">
+                                Github
                             </a>
                         </Link>
                         <Link href="https://drive.google.com/file/d/1kbk0vW0c15HD58XugdF_LKmzafLaZ2c7/view?usp=share_link" passHref={true}>
-                            <a target="_blank">
-                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Demo</button>
+                            <a className={`${styles.projectContentButton}`} target="_blank">
+                                Demo
                             </a>
                         </Link>
                     </div>
