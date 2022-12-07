@@ -43,8 +43,8 @@ export default function Home() {
                 </div>
                 <div className={styles.projectsDescriptionContainer}>
                     <p className={styles.projectsDescriptionItem}>
-                    A web application that predicts if an individual might have the monkeypox disease by the usage of Artificial Intelligence.
-                    The model that classify the input provided from the users has an accuraccy rate of 93.8%.
+                        A web application that predicts if an individual might have the monkeypox disease by the usage of Artificial Intelligence.
+                        The model that classify the input provided from the users has an accuraccy rate of 93.8%.
                     </p>
                 </div>
                 <div className={styles.projectsTechContainer}>
@@ -84,10 +84,14 @@ export default function Home() {
                     />
                     <div className={styles.projectsLinksContainer}>
                         <Link href="https://github.com/talalOthman/Monkeypox-app" passHref={true}>
-                            <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Github</button>
+                            <a target="_blank">
+                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Github</button>
+                            </a>
                         </Link>
                         <Link href="https://drive.google.com/file/d/1iOcLydbbXQcZ-s40d0Bqfix3P8edUQKy/view?usp=share_link" passHref={true}>
-                            <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Demo</button>
+                            <a target="_blank">
+                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Demo</button>
+                            </a>
                         </Link>
                     </div>
                     <Link href="/projects/project2" passHref={true}>

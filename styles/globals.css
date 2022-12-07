@@ -30,7 +30,7 @@ a {
   body {
     background: linear-gradient(-45deg, #1D1CE5, #4649FF, #7978FF, #C47AFF);
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 10s ease infinite;
     /* border: 1px solid yellow; */
   }
 

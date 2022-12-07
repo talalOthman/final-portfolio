@@ -31,18 +31,24 @@ export default function Home() {
                     <h1 className={styles.aboutNameItem}>Talal Al-Ahdal</h1>
                     <div className={styles.aboutSocialMediaContainer}>
                         <Link href="https://www.linkedin.com/in/talalothman/">
-                            <FontAwesomeIcon
-                                icon={faLinkedin}
-                                style={{ fontSize: 25 }}
-                                className={styles.aboutNavbarLogoItem}
-                            /></Link>
+                            <a target="_blank">
+                                <FontAwesomeIcon
+                                    icon={faLinkedin}
+                                    style={{ fontSize: 25 }}
+                                    className={styles.aboutNavbarLogoItem}
+                                />
+                            </a>
+                        </Link>
 
                         <Link href="https://github.com/talalOthman" >
-                            <FontAwesomeIcon
-                                icon={faGithub}
-                                style={{ fontSize: 25 }}
-                                className={styles.aboutNavbarLogoItem}
-                            /></Link>
+                            <a target="_blank">
+                                <FontAwesomeIcon
+                                    icon={faGithub}
+                                    style={{ fontSize: 25 }}
+                                    className={styles.aboutNavbarLogoItem}
+                                />
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.aboutDescriptionContainer}>
@@ -52,7 +58,9 @@ export default function Home() {
 
                 <div className={styles.aboutResumeContainer}>
                     <Link href="https://drive.google.com/file/d/1kLzgIBUgkwgYh-6ibkYAiGfhUEHQi_sE/view?usp=share_link" passHref={true}>
-                        <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Resume</button>
+                        <a target="_blank">
+                            <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Resume</button>
+                        </a>
                     </Link>
                 </div>
             </div>

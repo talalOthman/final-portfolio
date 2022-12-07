@@ -36,8 +36,8 @@ export default function Home() {
                 </div>
                 <div className={styles.projectsDescriptionContainer}>
                     <p className={styles.projectsDescriptionItem}>
-                    A web application that provides the neccassary information needed to track potential illegal activity that might occur in maritime areas.
-                    This project was built by carefully following the requirements given by the relevant stakeholders.  
+                        A web application that provides the neccassary information needed to track potential illegal activity that might occur in maritime areas.
+                        This project was built by carefully following the requirements given by the relevant stakeholders.
                     </p>
                 </div>
                 <div className={styles.projectsTechContainer}>
@@ -85,10 +85,14 @@ export default function Home() {
                     </Link>
                     <div className={styles.projectsLinksContainer}>
                         <Link href="https://github.com/talalOthman/Marine-app" passHref={true}>
-                            <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Github</button>
+                            <a target="_blank">
+                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Github</button>
+                            </a>
                         </Link>
                         <Link href="https://drive.google.com/file/d/1kbk0vW0c15HD58XugdF_LKmzafLaZ2c7/view?usp=share_link" passHref={true}>
-                            <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Demo</button>
+                            <a target="_blank">
+                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Demo</button>
+                            </a>
                         </Link>
                     </div>
                     <Link href="/projects/project3" passHref={true}>

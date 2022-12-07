@@ -35,8 +35,8 @@ export default function Home() {
                 </div>
                 <div className={styles.projectsDescriptionContainer}>
                     <p className={styles.projectsDescriptionItem}>
-                    A web application that provide the latest data relevant to the covid-19 pandameic. The data that is being used throughout this web application
-                    is fetched by using several third-party APIs.
+                        A web application that provide the latest data relevant to the covid-19 pandameic. The data that is being used throughout this web application
+                        is fetched by using several third-party APIs.
                     </p>
                 </div>
                 <div className={styles.projectsTechContainer}>
@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
                 <div className={styles.projectsBottomContentContainer}>
 
-                <Link href="/projects/project2" passHref={true}>
+                    <Link href="/projects/project2" passHref={true}>
                         <FontAwesomeIcon
                             icon={faArrowLeft}
                             style={{ fontSize: 25 }}
@@ -73,10 +73,14 @@ export default function Home() {
 
                     <div className={styles.projectsLinksContainer}>
                         <Link href="https://github.com/talalOthman/Covid19-Tracker" passHref={true}>
-                            <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Github</button>
+                            <a target="_blank">
+                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Github</button>
+                            </a>
                         </Link>
                         <Link href="https://covid-19-tracker-74390.web.app/" passHref={true}>
-                            <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Visit</button>
+                            <a target="_blank">
+                                <button className={`${styles.indexButtonItem} ${styles.projectContentButton}`}>Visit</button>
+                            </a>
                         </Link>
                     </div>
                     <FontAwesomeIcon
@@ -96,13 +100,13 @@ export default function Home() {
                     />
                 </Link>
 
-                
-                    <FontAwesomeIcon
-                        icon={faArrowRight}
-                        style={{ fontSize: 25 }}
-                        className={styles.projectsTechIconItemDisabled}
-                    />
-                
+
+                <FontAwesomeIcon
+                    icon={faArrowRight}
+                    style={{ fontSize: 25 }}
+                    className={styles.projectsTechIconItemDisabled}
+                />
+
             </div>
         </div>
     )
