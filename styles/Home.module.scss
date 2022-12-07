@@ -166,6 +166,7 @@
 .indexButtonItem:hover{
   background-color: white;
   color: black !important;
+  transition: 0.5s;
 }
 
 .projectsContent{
@@ -262,6 +263,10 @@
   margin: 1rem;
   min-width: 4rem;
   font-family: 'Fira Mono', monospace;
+}
+
+.projectContentButton{
+  transition: 0.5s;
 }
 
 .projectsDescriptionItem{
