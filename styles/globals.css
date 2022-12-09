@@ -33,6 +33,7 @@ a {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     /* border: 1px solid yellow; */
+    
   }
 
   @keyframes gradient {

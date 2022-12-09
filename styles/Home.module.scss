@@ -526,10 +526,25 @@
     background-color: rgba(0, 0, 0, .3);
     animation: barAnimation 0.5s;
     animation-fill-mode: forwards;
+    backdrop-filter: blur(3px);
   }
 
   .barInActive {
     display: none;
+    opacity: 0;
+    position: absolute;
+    right: 0vw;
+    top: 0;
+    // border: 1px solid blue;
+    height: 92vh;
+    // width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #b2b2b2;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(3px);
     animation: barAnimationExit 0.5s;
     animation-fill-mode: forwards;
   }
@@ -538,24 +553,28 @@
     0% {
       width: 0vw;
       display: none;
+      opacity: 0;
     }
 
     100% {
       width: 75vw;
       display: flex;
+      opacity: 1
     }
 
   }
 
   @keyframes barAnimationExit {
     0% {
-      width: 50vw;
+      width: 75vw;
       display: flex;
+      opacity: 1
     }
 
     100% {
       width: 0vw;
       display: none;
+      opacity: 0;
     }
 
   }

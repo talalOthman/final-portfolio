@@ -15,6 +15,10 @@ export default function Layout({ children }) {
         setIsAcitve(!isActive)
     }
 
+    function toggleHomePage(){
+        setIsAcitve(false)
+    }
+
     const barClassName = isActive ? `${styles.barActive}` : `${styles.barInActive}`
 
     return (
@@ -32,6 +36,7 @@ export default function Layout({ children }) {
                             icon={faCode}
                             style={{ fontSize: 25 }}
                             className={`${styles.layoutNavbarLogoItem}`}
+                            onClick={toggleHomePage}
                         /></Link>
                     <div className={styles.layoutNavbarSubItems}>
                         <Link href="/about">Skills</Link>
