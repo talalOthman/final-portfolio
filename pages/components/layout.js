@@ -3,11 +3,20 @@ import styles from '../../styles/Home.module.scss'
 import Head from 'next/head'
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useState } from 'react';
 // import '@fortawesome/fontawesome-svg-core/styles.css'; 
-import { faBars, faBurger, faCode, faHamburger, faProjectDiagram, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBurger, faCode, faHamburger, faProjectDiagram, faShieldVirus, faX, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Layout({ children }) {
+    const [isActive, setIsAcitve] = useState(false)
+
+    function toggleNavbar() {
+        setIsAcitve(!isActive)
+    }
+
+    const barClassName = isActive ? `${styles.barActive}` : `${styles.barInActive}`
+
     return (
         <>
             <Head>
@@ -22,7 +31,7 @@ export default function Layout({ children }) {
                         <FontAwesomeIcon
                             icon={faCode}
                             style={{ fontSize: 25 }}
-                            className={styles.layoutNavbarLogoItem}
+                            className={`${styles.layoutNavbarLogoItem}`}
                         /></Link>
                     <div className={styles.layoutNavbarSubItems}>
                         <Link href="/about">Skills</Link>
@@ -33,9 +42,20 @@ export default function Layout({ children }) {
                         <FontAwesomeIcon
                             icon={faBars}
                             style={{ fontSize: 25 }}
-                            className={styles.layoutNavbarLogoItem}
+                            className={`${styles.layoutNavbarLogoItem}`}
+                            onClick={toggleNavbar}
                         />
                     </div>
+
+                    <div className={barClassName}>
+                        <FontAwesomeIcon
+                            icon={faXmark}
+                            style={{ fontSize: 25 }}
+                            className={`${styles.layoutNavbarLogoItem}`}
+                            onClick={toggleNavbar}
+                        />
+                    </div>
+
                 </div>
             </div>
 
