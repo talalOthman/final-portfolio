@@ -33,7 +33,7 @@ a {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     /* border: 1px solid yellow; */
-    
+    overflow: hidden;
   }
 
   @keyframes gradient {
@@ -54,5 +54,5 @@ a {
 html, body{
   height: auto;
   max-height: auto;
-  overflow: auto;
+  overflow: hidden;
 }

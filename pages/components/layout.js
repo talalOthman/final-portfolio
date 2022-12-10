@@ -20,6 +20,7 @@ export default function Layout({ children }) {
     }
 
     const barClassName = isActive ? `${styles.barActive}` : `${styles.barInActive}`
+    const barContentClassName = isActive ? `${styles.barContentActive}` : `${styles.barContentInActive}`
 
     return (
         <>
@@ -53,12 +54,17 @@ export default function Layout({ children }) {
                     </div>
 
                     <div className={barClassName}>
+                        <div className={`${styles.layoutNavbarXBurgerIcon} ${barContentClassName}`}>
                         <FontAwesomeIcon
                             icon={faXmark}
                             style={{ fontSize: 25 }}
-                            className={`${styles.layoutNavbarLogoItem}`}
                             onClick={toggleNavbar}
                         />
+                        </div>
+                        <div className={`${styles.layoutNavbarBurgerItems} ${barContentClassName}`}>
+                        <Link href="/about">Skills</Link>
+                        <Link href="/about">About</Link>
+                        </div>
                     </div>
 
                 </div>

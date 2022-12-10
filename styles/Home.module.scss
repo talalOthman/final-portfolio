@@ -512,42 +512,51 @@
   }
 
   .barActive {
-    position: absolute;
-    right: 0vw;
-    top: 0;
-    // border: 1px solid blue;
-    height: 92vh;
-    // width: 50vw;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
-    background-color: #b2b2b2;
-    background-color: rgba(0, 0, 0, .3);
     animation: barAnimation 0.5s;
     animation-fill-mode: forwards;
     backdrop-filter: blur(3px);
   }
 
+
   .barInActive {
-    display: none;
-    opacity: 0;
-    position: absolute;
-    right: 0vw;
-    top: 0;
-    // border: 1px solid blue;
-    height: 92vh;
-    // width: 50vw;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
-    background-color: #b2b2b2;
-    background-color: rgba(0, 0, 0, .3);
-    backdrop-filter: blur(3px);
     animation: barAnimationExit 0.5s;
     animation-fill-mode: forwards;
   }
+
+  .barActive, .barInActive{
+    position: absolute;
+    right: 0vw;
+    top: 0;
+    height: 92vh;
+    display: flex;
+    padding: 0.5rem;
+    background-color: #b2b2b2;
+    background-color: rgba(0, 0, 0, .3);
+    flex-direction: column;
+  }
+
+  .layoutNavbarXBurgerIcon{
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .layoutNavbarBurgerItems{
+    // border: 1px solid red;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .barContentActive{
+    display: flex;
+  }
+
+  .barContentInActive{
+    display: none;
+  }
+  
 
   @keyframes barAnimation {
     0% {
@@ -573,7 +582,6 @@
 
     100% {
       width: 0vw;
-      display: none;
       opacity: 0;
     }
 
