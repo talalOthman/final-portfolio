@@ -398,8 +398,18 @@
   display: flex;
   justify-content: space-between;
   // border: 1px solid black; 
-  width: 9vw;
+  width: 30vw;
   min-width: 8rem;
+  // row-gap: 10vw;
+}
+
+.layoutNavbarSubItemsOption{
+  margin: 0;
+  font-family: 'Fira Mono', monospace;
+}
+.layoutNavbarSubItemsOption:hover{
+  text-shadow:0px 0px 5px white;
+
 }
 
 .layoutNavbarBurger {
@@ -460,12 +470,12 @@
     z-index: 1;
   }
 
-
   .barInActive {
     animation: barAnimationExit 0.5s;
     animation-fill-mode: forwards;
     z-index: 1;
   }
+
 
   .barActive, .barInActive{
     position: absolute;
@@ -475,8 +485,12 @@
     display: flex;
     padding: 0.5rem;
     background-color: #b2b2b2;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .6);
     flex-direction: column;
+  }
+
+  .barInActiveDefault{
+    display: none;
   }
 
   .layoutNavbarXBurgerIcon{
@@ -486,11 +500,24 @@
 
   }
 
+  .layoutNavbarBurgerItemsOption{
+    // border: 1px solid yellow;
+    margin: 0;
+    font-size: large;
+    font-family: 'Fira Mono', monospace;
+    text-align: center;
+    width: 40vw;
+    // border-bottom: 1px dashed white;
+  }
+
   .layoutNavbarBurgerItems{
     // border: 1px solid red;
-    height: 92vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
+    margin-top: 3vh;
+    row-gap: 5vh;
+    align-items: center;
   }
 
   .barContentActive{

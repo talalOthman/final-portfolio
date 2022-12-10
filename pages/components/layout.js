@@ -15,11 +15,11 @@ export default function Layout({ children }) {
         setIsAcitve(!isActive)
     }
 
-    function toggleHomePage(){
+    function toggleHomePage() {
         setIsAcitve(false)
     }
 
-    const barClassName = isActive ? `${styles.barActive}` : `${styles.barInActive}`
+    const barClassName = isActive ? `${styles.barActive}` : `${styles.barInActiveDefault} ${styles.barInActive}`
     const barContentClassName = isActive ? `${styles.barContentActive}` : `${styles.barContentInActive}`
 
     return (
@@ -40,8 +40,18 @@ export default function Layout({ children }) {
                             onClick={toggleHomePage}
                         /></Link>
                     <div className={styles.layoutNavbarSubItems}>
-                        <Link href="/about">Skills</Link>
-                        <Link href="/about">About</Link>
+                        <Link href="/about">
+                            <p className={styles.layoutNavbarSubItemsOption}>About</p>
+                            </Link>
+                            <Link href="/about">
+                            <p className={styles.layoutNavbarSubItemsOption}>Skills</p>
+                            </Link>
+                            <Link href="/about">
+                            <p className={styles.layoutNavbarSubItemsOption}>Experience</p>
+                            </Link>
+                            <Link href="/about">
+                            <p className={styles.layoutNavbarSubItemsOption}>Education</p>
+                            </Link>
                     </div>
 
                     <div className={styles.layoutNavbarBurger}>
@@ -55,15 +65,25 @@ export default function Layout({ children }) {
 
                     <div className={barClassName}>
                         <div className={`${styles.layoutNavbarXBurgerIcon} ${barContentClassName}`}>
-                        <FontAwesomeIcon
-                            icon={faXmark}
-                            style={{ fontSize: 25 }}
-                            onClick={toggleNavbar}
-                        />
+                            <FontAwesomeIcon
+                                icon={faXmark}
+                                style={{ fontSize: 25 }}
+                                onClick={toggleNavbar}
+                            />
                         </div>
                         <div className={`${styles.layoutNavbarBurgerItems} ${barContentClassName}`}>
-                        <Link href="/about">Skills</Link>
-                        <Link href="/about">About</Link>
+                            <Link href="/about">
+                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>About</p>
+                            </Link>
+                            <Link href="/about">
+                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>Skills</p>
+                            </Link>
+                            <Link href="/about">
+                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>Experience</p>
+                            </Link>
+                            <Link href="/about">
+                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>Education</p>
+                            </Link>
                         </div>
                     </div>
 
