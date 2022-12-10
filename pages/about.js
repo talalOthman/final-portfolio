@@ -59,7 +59,7 @@ export default function Home() {
                 <div className={styles.aboutResumeContainer}>
                     <Link href="https://drive.google.com/file/d/1kLzgIBUgkwgYh-6ibkYAiGfhUEHQi_sE/view?usp=share_link" passHref={true}>
                         <a target="_blank">
-                            <button className={`${styles.projectContentButton}`}>Resume</button>
+                            <button className={`${styles.indexButtonItem}`}>Resume</button>
                         </a>
                     </Link>
                 </div>
