@@ -44,7 +44,7 @@ export default function Home() {
                 <div className={styles.projectsDescriptionContainer}>
                     <p className={styles.projectsDescriptionItem}>
                         A web application that predicts if an individual might have the monkeypox disease by the usage of Artificial Intelligence.
-                        The model that classify the input provided from the users has an accuraccy rate of 93.8%.
+                        The model that classify the input provided from the users has an accuraccy rate of 93.4%.
                     </p>
                 </div>
                 <div className={styles.projectsTechContainer}>
