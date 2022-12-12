@@ -97,16 +97,6 @@
   // border: 1px solid yellow;
 }
 
-.indexTitleContainer {
-  // border: 1px solid green;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  width: 100vw;
-  height: 45vh;
-  // margin-top: -5rem;
-}
 
 .indexTitleItem {
   font-size: 7vw;
@@ -115,7 +105,7 @@
 }
 
 .indexSubTitleItem {
-  font-size: 1.7vw;
+  font-size: 4.3vw;
   color: white;
   /* border: 1px solid red; */
   margin-top: -3vh;
@@ -220,7 +210,7 @@
 .projectsContainer {
   display: flex;
   // border: 1px solid red;
-  height: 80vh;
+  height: 75vh;
   width: 80vw;
   background-color: #b2b2b2;
   background-color: rgba(0, 0, 0, .3);
@@ -357,7 +347,6 @@
 }
 
 
-@media all and (max-width:30em) {
 
   .indexTitleItem {
     font-size: 15vw;
@@ -365,12 +354,16 @@
 
   .indexTitleContainer {
     height: 27vh;
+    // border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100vw;
+    // margin-top: -5rem;
   }
 
-  .projectsContainer {
-    height: 75vh;
-  }
-}
+
 
 
 
@@ -435,11 +428,8 @@
 
 
 
-@media all and (max-width:30em) {
+@media all and (max-width:599px) {
 
-  .indexSubTitleItem {
-    font-size: 4.3vw;
-  }
 
   .projectsDescriptionItem {
     font-size: 1.5vh;
@@ -660,4 +650,46 @@
     font-size: 1vw;
   }
 
+  .indexTitleItem {
+    font-size: 7vw;
+    color: white;
+    /* border: 1px solid blue; */
+  }
+
+  .indexTitleContainer {
+    // border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100vw;
+    height: 45vh;
+    // margin-top: -5rem;
+  }
+
+  .projectsContainer {
+    display: flex;
+    // border: 1px solid red;
+    height: 80vh;
+    width: 80vw;
+    background-color: #b2b2b2;
+    background-color: rgba(0, 0, 0, .3);
+    flex-direction: column;
+  }
+
+  .indexSubTitleItem {
+    font-size: 1.7vw;
+  }
+
+  .projectsDescriptionItem {
+    font-size: 1rem;
+  }
+
+  .projectsNameItem {
+    font-size: 1.5rem;
+  }
+
+  .aboutDescriptionItem {
+    font-size: 1rem;
+  }
 }
