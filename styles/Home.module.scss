@@ -90,11 +90,12 @@
   align-items: center;
 }
 
-/*Index page styles*/
+
 .indexContentContainer {
   display: flex;
   flex-direction: column;
-  // border: 1px solid yellow;
+  border: 1px solid yellow;
+  height: 50vh;
 }
 
 
@@ -151,22 +152,15 @@
 }
 
 
-
-.indexButtonContainer {
-  display: flex;
-  /* border: 1px solid red; */
-  justify-content: center;
-}
-
 .indexButtonItem {
   border: 1px solid white;
-  height: 6vh;
-  width: 9rem;
-  font-size: 3.5vw;
+  width: 8rem;
+  font-size: 4vw;
   border-radius: 5px;
   background-color: transparent;
   color: white;
   font-family: 'Fira Mono', monospace;
+  height: 2.5rem;
   // color: white !important;
   // animation: backgroundColor 3s infinite;
   // animation-fill-mode: forwards;
@@ -348,23 +342,28 @@
 
 
 
-  .indexTitleItem {
-    font-size: 15vw;
-  }
+.indexTitleItem {
+  font-size: 15vw;
+}
 
-  .indexTitleContainer {
-    height: 27vh;
-    // border: 1px solid green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    width: 100vw;
-    // margin-top: -5rem;
-  }
+.indexTitleContainer {
+  height: 27vh;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  // margin-top: -5rem;
+}
 
-
-
+.indexButtonContainer {
+  display: flex;
+  border: 1px solid red;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+}
 
 
 
@@ -399,12 +398,13 @@
   column-gap: 2vw;
 }
 
-.layoutNavbarSubItemsOption{
+.layoutNavbarSubItemsOption {
   margin: 0;
   font-family: 'Fira Mono', monospace;
 }
-.layoutNavbarSubItemsOption:hover{
-  text-shadow:0px 0px 5px white;
+
+.layoutNavbarSubItemsOption:hover {
+  text-shadow: 0px 0px 5px white;
 }
 
 .layoutNavbarBurger {
@@ -469,7 +469,8 @@
   }
 
 
-  .barActive, .barInActive{
+  .barActive,
+  .barInActive {
     position: absolute;
     right: 0vw;
     top: 0;
@@ -482,18 +483,18 @@
     flex-direction: column;
   }
 
-  .barInActiveDefault{
+  .barInActiveDefault {
     display: none;
   }
 
-  .layoutNavbarXBurgerIcon{
+  .layoutNavbarXBurgerIcon {
     // border: 1px solid blue;
     display: flex;
     justify-content: flex-end;
 
   }
 
-  .layoutNavbarBurgerItemsOption{
+  .layoutNavbarBurgerItemsOption {
     // border: 1px solid yellow;
     margin: 0;
     font-size: 6vw;
@@ -503,7 +504,7 @@
     // border-bottom: 1px dashed white;
   }
 
-  .layoutNavbarBurgerItems{
+  .layoutNavbarBurgerItems {
     // border: 1px solid red;
     height: 50vh;
     display: flex;
@@ -513,14 +514,14 @@
     align-items: center;
   }
 
-  .barContentActive{
+  .barContentActive {
     display: flex;
   }
 
-  .barContentInActive{
-   opacity: 0;
+  .barContentInActive {
+    opacity: 0;
   }
-  
+
 
   @keyframes barAnimation {
     0% {
@@ -648,6 +649,7 @@
 
   .indexButtonItem {
     font-size: 1vw;
+    height: 3rem;
   }
 
   .indexTitleItem {
@@ -692,4 +694,6 @@
   .aboutDescriptionItem {
     font-size: 1rem;
   }
+
+
 }
