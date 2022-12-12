@@ -412,7 +412,6 @@
 }
 .layoutNavbarSubItemsOption:hover{
   text-shadow:0px 0px 5px white;
-
 }
 
 .layoutNavbarBurger {
@@ -648,4 +647,13 @@
   .barInActive {
     display: none;
   }
+
+  .layoutNavbarSubItems {
+    // border: 1px solid black; 
+    width: 23vw;
+    min-width: 8rem;
+    font-size: 1vw;
+    column-gap: 2vw;
+  }
+
 }
