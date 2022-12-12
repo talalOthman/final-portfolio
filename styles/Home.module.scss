@@ -172,7 +172,7 @@
   border: 1px solid white;
   height: 6vh;
   width: 9rem;
-  font-size: 1vw;
+  font-size: 3.5vw;
   border-radius: 5px;
   background-color: transparent;
   color: white;
@@ -654,6 +654,10 @@
     min-width: 8rem;
     font-size: 1vw;
     column-gap: 2vw;
+  }
+
+  .indexButtonItem {
+    font-size: 1vw;
   }
 
 }
