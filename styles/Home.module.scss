@@ -398,11 +398,12 @@
 
 .layoutNavbarSubItems {
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-between;
   // border: 1px solid black; 
-  width: 30vw;
+  width: 25vw;
   min-width: 8rem;
-  // row-gap: 10vw;
+  font-size: 1vw;
+  column-gap: 2vw;
 }
 
 .layoutNavbarSubItemsOption{
