@@ -458,7 +458,7 @@
   .barActive {
     animation: barAnimation 0.5s;
     animation-fill-mode: forwards;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     z-index: 1;
   }
 
