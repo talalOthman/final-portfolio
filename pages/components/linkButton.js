@@ -10,7 +10,7 @@ import { faGithub, faLinkedin, faReact, faPython, faJs, faCss3, faCss3Alt, faHtm
 export default function LinkButton({link, name, target="_blank"}) {
 
     return (
-        <Link href={link} passHref={true}>
+        <Link href={link ?? ''} passHref={true}>
             <a className={`${styles.projectContentButton}`} target={target}>
                 {name}
             </a>
