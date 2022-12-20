@@ -10,6 +10,7 @@ import projectImage from '../../public/images/buymecoffe.jpeg'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import React, { useEffect } from 'react'
+import LinkButton from '../components/linkButton';
 
 
 export default function Home() {
@@ -83,16 +84,8 @@ export default function Home() {
                         className={`${styles.projectsTechIconItemDisabled} ${styles.projectsTechIconItemHidden}`}
                     />
                     <div className={styles.projectsLinksContainer}>
-                        <Link href="https://github.com/talalOthman/Monkeypox-app" passHref={true}>
-                            <a className={`${styles.projectContentButton}`} target="_blank">
-                                Github
-                            </a>
-                        </Link>
-                        <Link href="https://drive.google.com/file/d/1iOcLydbbXQcZ-s40d0Bqfix3P8edUQKy/view?usp=share_link" passHref={true}>
-                            <a className={`${styles.projectContentButton}`}target="_blank">
-                                Demo
-                            </a>
-                        </Link>
+                        <LinkButton link={"https://github.com/talalOthman/Monkeypox-app"} name={"Github"}/>
+                        <LinkButton link={"https://drive.google.com/file/d/1iOcLydbbXQcZ-s40d0Bqfix3P8edUQKy/view?usp=share_link"} name={"Demo"}/>
                     </div>
                     <Link href="/projects/project2" passHref={true}>
                         <FontAwesomeIcon

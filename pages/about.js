@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGlobe, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import LinkButton from './components/linkButton';
 
 
 export default function Home() {
@@ -57,11 +58,7 @@ export default function Home() {
                 </div>
 
                 <div className={styles.aboutResumeContainer}>
-                    <Link href="https://drive.google.com/file/d/1kLzgIBUgkwgYh-6ibkYAiGfhUEHQi_sE/view?usp=share_link" passHref={true}>
-                        <a target="_blank">
-                            <button className={`${styles.indexButtonItem}`}>Resume</button>
-                        </a>
-                    </Link>
+                    <LinkButton link={"https://drive.google.com/file/d/1kLzgIBUgkwgYh-6ibkYAiGfhUEHQi_sE/view?usp=share_link"} name={"Resume"}/>
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowAltCircleRight, faArrowLeft, faArrowRight, faCode, faProjectDiagram, faShieldVirus, faShip, faVirusCovid } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router'
 import { faGithub, faLinkedin, faReact, faPython, faJs, faCss3, faCss3Alt, faHtml5, faLaravel } from '@fortawesome/free-brands-svg-icons';
-
+import LinkButton from '../components/linkButton';
 
 
 export default function Home() {
@@ -72,16 +72,8 @@ export default function Home() {
                     </Link>
 
                     <div className={styles.projectsLinksContainer}>
-                        <Link href="https://github.com/talalOthman/Covid19-Tracker" passHref={true}>
-                            <a className={`${styles.projectContentButton}`} target="_blank">
-                                Github
-                            </a>
-                        </Link>
-                        <Link href="https://covid-19-tracker-74390.web.app/" passHref={true}>
-                            <a className={`${styles.projectContentButton}`} target="_blank">
-                                Demo
-                            </a>
-                        </Link>
+                        <LinkButton link={"https://github.com/talalOthman/Covid19-Tracker"} name={"Github"}/>
+                        <LinkButton link={"https://covid-19-tracker-74390.web.app/"} name={"Visit"}/>
                     </div>
                     <FontAwesomeIcon
                         icon={faArrowRight}

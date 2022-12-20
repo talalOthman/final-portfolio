@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowAltCircleRight, faArrowDown19, faArrowLeft, faArrowLeftRotate, faArrowRight, faCode, faProjectDiagram, faShieldVirus, faShip } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router'
 import { faGithub, faLinkedin, faReact, faPython, faJs, faCss3, faCss3Alt, faHtml5, faLaravel } from '@fortawesome/free-brands-svg-icons';
-
+import LinkButton from '../components/linkButton';
 
 
 export default function Home() {
@@ -84,16 +84,8 @@ export default function Home() {
                         />
                     </Link>
                     <div className={styles.projectsLinksContainer}>
-                        <Link href="https://github.com/talalOthman/Marine-app" passHref={true}>
-                            <a className={`${styles.projectContentButton}`} target="_blank">
-                                Github
-                            </a>
-                        </Link>
-                        <Link href="https://drive.google.com/file/d/1kbk0vW0c15HD58XugdF_LKmzafLaZ2c7/view?usp=share_link" passHref={true}>
-                            <a className={`${styles.projectContentButton}`} target="_blank">
-                                Demo
-                            </a>
-                        </Link>
+                        <LinkButton link={"https://github.com/talalOthman/Marine-app"} name={"Github"}/>
+                        <LinkButton link={"https://drive.google.com/file/d/1kbk0vW0c15HD58XugdF_LKmzafLaZ2c7/view?usp=share_link"} name={"Demo"}/>
                     </div>
                     <Link href="/projects/project3" passHref={true}>
                         <FontAwesomeIcon
