@@ -5,64 +5,43 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowAltCircleRight, faArrowLeft, faArrowRight, faCode, faProjectDiagram, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router'
 import { faGithub, faLinkedin, faReact, faPython, faJs, faCss3, faCss3Alt, faHtml5 } from '@fortawesome/free-brands-svg-icons';
-import Image from 'next/image'
-import projectImage from '../../public/images/buymecoffe.jpeg'
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
 import React, { useEffect } from 'react'
+import Image from 'next/image'
 
 
 export default function ExperienceMain() {
     const router = useRouter()
 
     return (
-        <div className={styles.projectsContent}>
-            <div className={styles.projectsContainer}>
-                <div className={styles.projectsNameContainer}>
-                    <h1 className={styles.projectsNameItem}>Vimigo</h1>
+        <div className={styles.experienceContent}>
+            <div className={styles.experienceContainer}>
+                <div className={styles.experienceNameContainer}>
+                    <h1 className={styles.projectsNameItem}>Backend Developer</h1>
                 </div>
-                <div className={styles.projectsPicContainer}>
-                    <div className={styles.projectsPicItem}>
-                        <FontAwesomeIcon
-                            icon={faShieldVirus}
-                            style={{ fontSize: 250 }}
-                            className={styles.projectsPicItem}
+                <div className={styles.experiencePicContainer}>
+                <div className={styles.experienceImageItem}>
+                        <Image
+                            src="/images/vimigo.png"
+                            width={500}
+                            height={500}
+                            className={styles.experienceImageItem}
                         />
                     </div>
                 </div>
-                <div className={styles.projectsDescriptionContainer}>
-                    <p className={styles.projectsDescriptionItem}>
-                        A web application that predicts if an individual might have the monkeypox disease by the usage of Artificial Intelligence.
-                        The model that classify the input provided from the users has an accuraccy rate of 93.8%.
-                    </p>
+                <div className={styles.experienceDateContainer}>
+                    <p className={styles.experienceDateTitle}>Experience Duration</p>
+                    <p className={styles.experienceDateItem}>2021 Oct - 2022 Feb</p>
                 </div>
-                <div className={styles.projectsTechContainer}>
-                    <h3 className={styles.projectsTechTitleItem}>Technologies Used</h3>
-                    <div className={styles.projectsTechIconsContainer}>
-                        <FontAwesomeIcon
-                            icon={faJs}
-                            style={{ fontSize: 25 }}
-                            className={styles.projectsTechIconItem}
-                        />
-
-                        <FontAwesomeIcon
-                            icon={faPython}
-                            style={{ fontSize: 25 }}
-                            className={styles.projectsTechIconItem}
-                        />
-
-                        <FontAwesomeIcon
-                            icon={faCss3Alt}
-                            style={{ fontSize: 25 }}
-                            className={styles.projectsTechIconItem}
-                        />
-
-                        <FontAwesomeIcon
-                            icon={faHtml5}
-                            style={{ fontSize: 25 }}
-                            className={styles.projectsTechIconItem}
-                        />
-                    </div>
+                {/* <div className={styles.experienceTitleContainer}>
+                <p className={styles.experienceTitleItem}>Key Contributions</p>
+                </div> */}
+                <div className={styles.experienceDescriptionContainer}>
+                <p className={styles.experienceTitleItem}>Key Contributions</p>
+                    <ul className={styles.experienceDescriptionList}>
+                        <li className={styles.experienceDescriptionItem}>Developed 7 new notifications that are being used by customers.</li>
+                        <li className={styles.experienceDescriptionItem}>Enhanced existing model classes by creating custom scope functions to ease the development for future features</li>
+                        <li className={styles.experienceDescriptionItem}>Increased the overall engagement rate of the Vimigo product.</li>
+                    </ul>
                 </div>
                 <div className={styles.projectsBottomContentContainer}>
 
@@ -72,14 +51,9 @@ export default function ExperienceMain() {
                         className={`${styles.projectsTechIconItemDisabled} ${styles.projectsTechIconItemHidden}`}
                     />
                     <div className={styles.projectsLinksContainer}>
-                        <Link href="https://github.com/talalOthman/Monkeypox-app" passHref={true}>
+                        <Link href="https://www.vimigotech.com/" passHref={true}>
                             <a className={`${styles.projectContentButton}`} target="_blank">
-                                Github
-                            </a>
-                        </Link>
-                        <Link href="https://drive.google.com/file/d/1iOcLydbbXQcZ-s40d0Bqfix3P8edUQKy/view?usp=share_link" passHref={true}>
-                            <a className={`${styles.projectContentButton}`}target="_blank">
-                                Demo
+                                Details
                             </a>
                         </Link>
                     </div>

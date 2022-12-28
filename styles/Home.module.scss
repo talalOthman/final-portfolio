@@ -30,7 +30,7 @@
   // width: 80vw;
 }
 
-.aboutImageItem {
+.aboutImageItem, .experienceImageItem {
   display: flex;
   border-radius: 50%;
   height: 25vh;
@@ -192,7 +192,7 @@
 
 }
 
-.projectsContent {
+.projectsContent, .experienceContent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +201,7 @@
   overflow: hidden;
 }
 
-.projectsContainer {
+.projectsContainer, .experienceContainer {
   display: flex;
   // border: 1px solid red;
   height: 75vh;
@@ -226,7 +226,7 @@
   min-width: 5.5rem;
 }
 
-.projectsNameContainer {
+.projectsNameContainer, .experienceNameContainer {
   display: flex;
   /* border: 1px solid red; */
   height: 10vh;
@@ -234,7 +234,7 @@
   justify-content: center;
 }
 
-.projectsPicContainer {
+.projectsPicContainer, .experiencePicContainer {
   display: flex;
   height: 32vh;
   width: 80vw;
@@ -305,12 +305,9 @@
 
 .projectsDescriptionItem {
   display: flex;
-  // flex-direction: column;
   text-align: justify;
-  font-size: 1rem;
   font-family: 'Fira Mono', monospace;
   // border: 1px solid red;
-  // padding-left: 1rem;
   row-gap: 0.5rem;
   width: 50rem;
 }
@@ -340,6 +337,85 @@
   display: none;
 }
 
+.experienceContainer{
+  // border: 1px solid red;
+}
+
+.experiencePicContainer{
+  // border: 1px solid green;
+  height: 30vh;
+}
+
+.experienceNameContainer{
+  // border: 1px solid yellow;
+}
+
+.experienceDateContainer{
+  display: flex;
+  justify-content: center;
+  // border: 1px solid red;
+  font-family: 'Fira Mono', monospace;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  row-gap: 1vh;
+}
+.experienceDateTitle{
+  margin: 0;
+  font-size: 2vh;
+}
+
+.experienceDateItem{
+  margin: 0;
+  font-size: 1.5vh;
+}
+
+.experienceDescriptionContainer {
+  display: flex;
+  // border: 1px solid blue;
+  height: 20vh;
+  width: 80vw;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  // padding-left: 1rem;
+  // padding-right: 1rem;
+}
+
+
+
+.experienceTitleItem{
+  margin-bottom: 0;
+  font-size: 2vh;
+  font-family: 'Fira Mono', monospace;;
+}
+
+.experienceDescriptionList {
+  display: flex;
+  text-align: justify;
+  font-size: 1.3vh;
+  font-family: 'Fira Mono', monospace;
+  // border: 1px solid red;
+  row-gap: 0.5rem;
+  flex-direction: column;
+  padding: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  list-style: none;
+  // margin-top: 0;
+}
+
+.experienceDescriptionItem{
+  // border: 1px solid yellow;
+  // margin-left: -10vw;
+}
+
+.experienceImageItem{
+  border-radius: 0;
+  height: 23vh;
+  width: 23vh;
+}
 
 
 .indexTitleItem {
@@ -426,6 +502,8 @@
   cursor: pointer;
   height: 3vh;
 }
+
+
 
 
 
@@ -627,7 +705,7 @@
     margin-bottom: 7rem;
   }
 
-  .aboutImageItem {
+  .aboutImageItem, .experienceImageItem {
     height: 15rem;
     width: 15rem;
   }
@@ -670,7 +748,7 @@
     // margin-top: -5rem;
   }
 
-  .projectsContainer {
+  .projectsContainer, .experienceContainer {
     display: flex;
     // border: 1px solid red;
     height: 80vh;
@@ -698,5 +776,37 @@
 
   .indexSubTitleItem {
     margin-top: -4vw;
+  }
+
+  .experienceDescriptionContainer{
+    row-gap: 3vh;
+  }
+
+  .experienceTitleItem{
+    font-size: 1.3rem;
+    // border: 1px solid red;
+   
+  }
+
+  .experienceTitleContainer{
+    // border: 1px solid red;
+  }
+  .experienceDescriptionList{
+    font-size: 0.8rem;
+    margin-top: -0.7rem;
+    width: 60vw;
+  }
+
+  .experienceDateTitle{
+    font-size: 1.3rem;
+  }
+
+  .experienceDateItem{
+    font-size: 0.8rem;
+  }
+
+  .experiencePicContainer{
+    height: 40vh;
+    // border: 1px solid yellow;
   }
 }
