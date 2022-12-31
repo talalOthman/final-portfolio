@@ -43,8 +43,8 @@ export default function Layout({ children }) {
                         <Link href="/about">
                             <p className={styles.layoutNavbarSubItemsOption}>About</p>
                             </Link>
-                            <Link href="/about">
-                            <p className={styles.layoutNavbarSubItemsOption}>Skills</p>
+                            <Link href="/projects/projectsMain">
+                            <p className={styles.layoutNavbarSubItemsOption}>Projects</p>
                             </Link>
                             <Link href="/experience/experienceMain">
                             <p className={styles.layoutNavbarSubItemsOption}>Experience</p>
@@ -75,8 +75,8 @@ export default function Layout({ children }) {
                             <Link href="/about">
                                 <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>About</p>
                             </Link>
-                            <Link href="/about">
-                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>Skills</p>
+                            <Link href="/projects/projectsMain">
+                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>Projects</p>
                             </Link>
                             <Link href="/experience/experienceMain">
                                 <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>Experience</p>

@@ -462,18 +462,6 @@
   padding: 2.5rem;
 }
 
-// .layoutNavbarItemLeftChoices
-
-.layoutNavbarSubItems {
-  display: flex;
-  // justify-content: space-between;
-  // border: 1px solid black; 
-  width: 25vw;
-  min-width: 8rem;
-  font-size: 1vw;
-  column-gap: 2vw;
-}
-
 .layoutNavbarSubItemsOption {
   margin: 0;
   font-family: 'Fira Mono', monospace;
@@ -686,6 +674,10 @@
     display: flex;
   }
 
+  .projectContentButton{
+    width: 9vw;
+  }
+
   .projectsBottomContentContainer {
     display: flex;
     // border: 1px solid yellow;
@@ -719,11 +711,14 @@
   }
 
   .layoutNavbarSubItems {
-    // border: 1px solid black; 
-    width: 23vw;
+    width: 28vw;
     min-width: 8rem;
     font-size: 1vw;
     column-gap: 2vw;
+    display: flex;
+    // border: 1px solid black; 
+    min-width: 8rem;
+    justify-content: flex-end;
   }
 
   .indexButtonItem {
