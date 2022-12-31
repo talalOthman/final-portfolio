@@ -4,7 +4,7 @@ import EducationCard from '../components/educationCard';
 
 export default function EducationMain() {
     const achievments = [
-        'Demonstrated strong problem-solving skills by completing a variety of challenging software engineering project.',
+        'Demonstrated strong problem-solving skills by completing a variety of challenging software engineering projects.',
         'Worked with a cross-functional team to deliver a complete software product, from conception to deployment, and demonstrated strong communication and collaboration skills.'
     ]
     return (
