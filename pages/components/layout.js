@@ -3,10 +3,25 @@ import styles from '../../styles/Home.module.scss'
 import Head from 'next/head'
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faCode, faProjectDiagram, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
+import { useState } from 'react';
+// import '@fortawesome/fontawesome-svg-core/styles.css'; 
+import { faBars, faBurger, faCode, faHamburger, faProjectDiagram, faShieldVirus, faX, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Layout({ children }) {
+    const [isActive, setIsAcitve] = useState(false)
+
+    function toggleNavbar() {
+        setIsAcitve(!isActive)
+    }
+
+    function toggleHomePage() {
+        setIsAcitve(false)
+    }
+
+    const barClassName = isActive ? `${styles.barActive}` : `${styles.barInActiveDefault} ${styles.barInActive}`
+    const barContentClassName = isActive ? `${styles.barContentActive}` : `${styles.barContentInActive}`
+
     return (
         <>
             <Head>
@@ -21,9 +36,57 @@ export default function Layout({ children }) {
                         <FontAwesomeIcon
                             icon={faCode}
                             style={{ fontSize: 25 }}
-                            className={styles.layoutNavbarLogoItem}
+                            className={`${styles.layoutNavbarLogoItem}`}
+                            onClick={toggleHomePage}
                         /></Link>
-                    <Link href="/about">About</Link>
+                    <div className={styles.layoutNavbarSubItems}>
+                        <Link href="/about">
+                            <p className={styles.layoutNavbarSubItemsOption}>About</p>
+                            </Link>
+                            <Link href="/projects/projectsMain">
+                            <p className={styles.layoutNavbarSubItemsOption}>Projects</p>
+                            </Link>
+                            <Link href="/experience/experienceMain">
+                            <p className={styles.layoutNavbarSubItemsOption}>Experience</p>
+                            </Link>
+                            <Link href="/education/educationMain">
+                            <p className={styles.layoutNavbarSubItemsOption}>Education</p>
+                            </Link>
+                    </div>
+
+                    <div className={styles.layoutNavbarBurger}>
+                        <FontAwesomeIcon
+                            icon={faBars}
+                            style={{ fontSize: 25 }}
+                            className={`${styles.layoutNavbarLogoItem}`}
+                            onClick={toggleNavbar}
+                        />
+                    </div>
+
+                    <div className={barClassName}>
+                        <div className={`${styles.layoutNavbarXBurgerIcon} ${barContentClassName}`}>
+                            <FontAwesomeIcon
+                                icon={faXmark}
+                                style={{ fontSize: 25 }}
+                                onClick={toggleNavbar}
+                            />
+                        </div>
+                        <div className={`${styles.layoutNavbarBurgerItems} ${barContentClassName}`}>
+                            <Link href="/about">
+                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>About</p>
+                            </Link>
+                            <Link href="/projects/projectsMain">
+                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>Projects</p>
+                            </Link>
+                            <Link href="/experience/experienceMain">
+                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>Experience</p>
+                            </Link>
+                            <Link href="/education/educationMain">
+                                <p className={styles.layoutNavbarBurgerItemsOption} onClick={toggleHomePage}>Education</p>
+                            </Link>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 

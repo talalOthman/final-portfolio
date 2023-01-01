@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import $ from "jquery"
+import LinkButton from './components/linkButton';
 
 
 
@@ -24,7 +25,7 @@ export default function Home() {
             </div>
 
             <div className={styles.indexButtonContainer}>
-                <button onClick={redirectUploadImage} className={styles.indexButtonItem}>Projects</button>
+                <LinkButton link={"/projects/projectsMain"} name={"Projects"} target={""}/>
             </div>
         </div>
     )
