@@ -790,11 +790,11 @@
     justify-content: center;
   }
 
-  .experienceDescriptionListConatiner{
-    // border: 1px solid yellow;
-    display: flex;
-    width: 55rem;
-  }
+  // .experienceDescriptionListConatiner{
+  //   // border: 1px solid yellow;
+  //   display: flex;
+  //   // width: 55rem;
+  // }
 
   .experienceTitleItem{
     font-size: 1.3rem;
@@ -809,6 +809,7 @@
     font-size: 0.8rem;
     margin-top: -0.7rem;
     width: 60vw;
+    border: 1px solid red;
   }
 
   .experienceDateTitle{
@@ -820,7 +821,7 @@
   }
 
   .experiencePicContainer, .projectsPicContainer{
-    height: 50vh
-    // border: 1px solid yellow;
+    height: 50vh;
+    border: 1px solid yellow;
   }
 }
