@@ -697,9 +697,9 @@
     margin-bottom: 7rem;
   }
 
-  .aboutImageItem, .experienceImageItem {
-    height: 15rem;
-    width: 15rem;
+  .aboutImageItem, .experienceImageItem, .projectsPicItem {
+    height: 20vw;
+    width: 20vw;
   }
 
   .barActive {
@@ -758,7 +758,18 @@
   }
 
   .projectsDescriptionItem {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    // border: 1px solid red;
+    width: 40vw;
+  }
+
+  .projectsTechTitleItem{
+    font-size: 1.3rem;
+  }
+
+  .projectsTechContainer{
+    // border: 1px solid yellow;
+    height: 15vh;
   }
 
   .projectsNameItem {
@@ -775,6 +786,14 @@
 
   .experienceDescriptionContainer{
     row-gap: 3vh;
+    // border: 1px solid red;
+    justify-content: center;
+  }
+
+  .experienceDescriptionListConatiner{
+    // border: 1px solid yellow;
+    display: flex;
+    width: 55rem;
   }
 
   .experienceTitleItem{
@@ -800,8 +819,8 @@
     font-size: 0.8rem;
   }
 
-  .experiencePicContainer{
-    height: 40vh;
+  .experiencePicContainer, .projectsPicContainer{
+    height: 70vh;
     // border: 1px solid yellow;
   }
 }
