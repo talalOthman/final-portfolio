@@ -698,8 +698,8 @@
   }
 
   .aboutImageItem, .experienceImageItem, .projectsPicItem {
-    height: 15vw;
-    width: 15vw;
+    height: 20vw;
+    width: 20vw;
   }
 
   .barActive {
@@ -821,6 +821,6 @@
 
   .experiencePicContainer, .projectsPicContainer{
     height: 50vh;
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
   }
 }
