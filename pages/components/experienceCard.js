@@ -30,7 +30,6 @@ export default function ExperienceCard({ jobTitle, image, startDuration, endDura
                 </div>
                 <div className={styles.experienceDescriptionContainer}>
                     <p className={styles.experienceTitleItem}>Key Contributions</p>
-                    <div className={styles.experienceDescriptionListConatiner}>
                         <ul className={styles.experienceDescriptionList}>
                             {
                                 contributions.map((contribution) => {
@@ -40,7 +39,6 @@ export default function ExperienceCard({ jobTitle, image, startDuration, endDura
                                 })
                             }
                         </ul>
-                    </div>
                 </div>
                 <div className={styles.projectsBottomContentContainer}>
                     <Link href={leftArrowLink ?? ''}>
